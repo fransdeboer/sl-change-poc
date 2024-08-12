@@ -35,6 +35,7 @@ export class MyElement extends ScopedElementsMixin(LitElement) {
               name="visibility"
               .value=${this.visibilityOptions}
               @sl-change=${(event: CustomEvent<string[]>) => {
+                // this.visibilityOptions = event.detail;
                 console.log(event.detail);
               }}
             >
